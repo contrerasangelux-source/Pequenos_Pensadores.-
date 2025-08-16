@@ -1,0 +1,50 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to right, #fce4ec, #f3e5f5, #e1f5fe);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.avatar {
+  width: 200px;
+  height: auto;
+}
+.animated {
+  animation: slideIn 2s ease-in-out;
+}
+@keyframes slideIn {
+  from { transform: translateX(-300px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+.bubble {
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  margin-left: 20px;
+  font-size: 1.2em;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+nav li {
+  margin: 20px 0;
+}
+nav a {
+  text-decoration: none;
+  background: #ffb6c1;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+nav a:hover {
+  background: #ff80ab;
+}
